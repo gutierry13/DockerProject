@@ -5,6 +5,8 @@ docker pull gutierry13/node-mysql-app
 
 ## Para executar o banco de dados, rode os comandos abaixo:
 docker run -d --name mysql --network my-network -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=db_aula mysql:latest  
+
+## Aguarde a criação e execute o comando para poder executar querys:
 docker exec -it mysql mysql -u root -proot db_aula  
 
 ## Execute os comandos abaixo para criar e popular a tabela:  
